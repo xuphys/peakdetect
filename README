@@ -1,0 +1,23 @@
+peakdetect is a small C program which is used to detect peaks in a wave data.
+It is originally inspired by Eli Billauer's peakdet for MATLAB:
+
+http://billauer.co.il/peakdet.html
+
+To compile it, what you need is only a ANSI C compliant compiler, such as gcc
+(GNU C Compiler), Microsoft Visual C++, Intel C Compiler, etc. Any of the
+following commands will compile the source:
+
+GNU C Compiler:         gcc -O2 -o peakdetect peakdetect.c
+Microsoft Visual C++:   cl -O2 peakdetect.c
+Intel C Compiler:       icc -O2 -o peakdetect peakdetect.c
+
+Then use "/path/to/peakdetect --help" command to see the usage.
+
+This software is released under GPLv3:
+
+http://www.gnu.org/licenses/gpl-3.0.html
+
+Contact me if there's any problem: xuphys@gmail.com
+
+by Hong Xu
+Jul 28, 2011
