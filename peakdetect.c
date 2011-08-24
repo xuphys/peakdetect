@@ -263,9 +263,8 @@ int main(int argc, const char *argv[])
 
     /* read data */
     i = 0;
-    while(!feof(in))
+    while(fgets(line, LINE_BUFFER_SIZE, in))
     {
-        fgets(line, LINE_BUFFER_SIZE, in);
         sscanf(line, "%lf,%lf", row, row + 1);
         data[0][i] = row[0];
         data[1][i] = row[1];
