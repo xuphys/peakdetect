@@ -70,7 +70,7 @@ void print_help(void)
 void print_version(void)
 {
     fprintf(stderr,
-            "peakdetect version 0.1.1\n"
+            "peakdetect version 0.1.2\n"
             "Copyright (C) 2011 Hong Xu <xuphys@gmail.com>\n"
             "Originally inspired by Eli Billauer\'s peakdet for MATLAB:\n"
             "http://billauer.co.il/peakdet.html\n"
