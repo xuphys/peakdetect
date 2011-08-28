@@ -265,13 +265,7 @@ int main(int argc, const char *argv[])
     i = 0;
     while(fgets(line, LINE_BUFFER_SIZE, in))
     {
-        sscanf(line, "%lf,%lf", row, row + 1);
-        data[0][i] = row[0];
-        data[1][i] = row[1];
-        ++ i;
-
         /* when the buffer is not large enough, increase the buffer size */
-
         idummy = i - INITIAL_ROW_COUNT;
         if(idummy >= 0 && idummy % ROW_COUNT_INCREASEMENT == 0)
         {
@@ -287,6 +281,11 @@ int main(int argc, const char *argv[])
                 data[j] = tmp;
             }
         }
+
+        sscanf(line, "%lf,%lf", row, row + 1);
+        data[0][i] = row[0];
+        data[1][i] = row[1];
+        ++ i;
     }
 
     if(detect_peak(data[1], i,
