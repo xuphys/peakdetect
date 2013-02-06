@@ -151,7 +151,7 @@ int detect_peak(
             i = mn_pos - 1;
 
             mx = data[mn_pos];
-            mx_pos = data[mn_pos];
+            mx_pos = mn_pos;
         }
     }
 
