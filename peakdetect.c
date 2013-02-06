@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Hong Xu. All rights reserved.
+ * Copyright 2011, 2013 Hong Xu. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -30,7 +30,7 @@
  *
  * Purpose: Peak detection in a wave.
  *
- * Author: Hong Xu <xuphys@gmail.com>
+ * Author: Hong Xu <hong@hong.me>
  *
  */
 #include <stdio.h>
